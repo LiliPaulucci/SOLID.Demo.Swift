@@ -12,7 +12,11 @@
 		D768E2111F6B05B30012EFF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D768E20F1F6B05B30012EFF9 /* Main.storyboard */; };
 		D768E2131F6B05B30012EFF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D768E2121F6B05B30012EFF9 /* Assets.xcassets */; };
 		D768E2161F6B05B30012EFF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D768E2141F6B05B30012EFF9 /* LaunchScreen.storyboard */; };
-		D768E2211F6B05B30012EFF9 /* SOLID_Demo_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768E2201F6B05B30012EFF9 /* SOLID_Demo_SwiftTests.swift */; };
+		D768E2351F6B11B00012EFF9 /* CardinalConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768E2341F6B11B00012EFF9 /* CardinalConverterTests.swift */; };
+		D768E2371F6B15D70012EFF9 /* INumeralConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768E2361F6B15D70012EFF9 /* INumeralConverter.swift */; };
+		D768E2391F6B165F0012EFF9 /* CardinalConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768E2381F6B165F0012EFF9 /* CardinalConverter.swift */; };
+		D768E23B1F6B19C90012EFF9 /* ITranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768E23A1F6B19C90012EFF9 /* ITranslator.swift */; };
+		D768E23D1F6B1C900012EFF9 /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768E23C1F6B1C900012EFF9 /* MathUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +38,12 @@
 		D768E2151F6B05B30012EFF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D768E2171F6B05B30012EFF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D768E21C1F6B05B30012EFF9 /* SOLID.Demo.SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOLID.Demo.SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D768E2201F6B05B30012EFF9 /* SOLID_Demo_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOLID_Demo_SwiftTests.swift; sourceTree = "<group>"; };
 		D768E2221F6B05B30012EFF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D768E2341F6B11B00012EFF9 /* CardinalConverterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardinalConverterTests.swift; sourceTree = "<group>"; };
+		D768E2361F6B15D70012EFF9 /* INumeralConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INumeralConverter.swift; sourceTree = "<group>"; };
+		D768E2381F6B165F0012EFF9 /* CardinalConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardinalConverter.swift; sourceTree = "<group>"; };
+		D768E23A1F6B19C90012EFF9 /* ITranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITranslator.swift; sourceTree = "<group>"; };
+		D768E23C1F6B1C900012EFF9 /* MathUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,10 @@
 				D768E2121F6B05B30012EFF9 /* Assets.xcassets */,
 				D768E2141F6B05B30012EFF9 /* LaunchScreen.storyboard */,
 				D768E2171F6B05B30012EFF9 /* Info.plist */,
+				D768E2361F6B15D70012EFF9 /* INumeralConverter.swift */,
+				D768E2381F6B165F0012EFF9 /* CardinalConverter.swift */,
+				D768E23A1F6B19C90012EFF9 /* ITranslator.swift */,
+				D768E23C1F6B1C900012EFF9 /* MathUtils.swift */,
 			);
 			path = SOLID.Demo.Swift;
 			sourceTree = "<group>";
@@ -90,8 +102,8 @@
 		D768E21F1F6B05B30012EFF9 /* SOLID.Demo.SwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				D768E2201F6B05B30012EFF9 /* SOLID_Demo_SwiftTests.swift */,
 				D768E2221F6B05B30012EFF9 /* Info.plist */,
+				D768E2341F6B11B00012EFF9 /* CardinalConverterTests.swift */,
 			);
 			path = SOLID.Demo.SwiftTests;
 			sourceTree = "<group>";
@@ -150,6 +162,7 @@
 					};
 					D768E21B1F6B05B30012EFF9 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D768E2071F6B05B30012EFF9;
 					};
@@ -199,8 +212,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D768E2391F6B165F0012EFF9 /* CardinalConverter.swift in Sources */,
 				D768E20E1F6B05B30012EFF9 /* ViewController.swift in Sources */,
 				D768E20C1F6B05B30012EFF9 /* AppDelegate.swift in Sources */,
+				D768E23D1F6B1C900012EFF9 /* MathUtils.swift in Sources */,
+				D768E23B1F6B19C90012EFF9 /* ITranslator.swift in Sources */,
+				D768E2371F6B15D70012EFF9 /* INumeralConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D768E2211F6B05B30012EFF9 /* SOLID_Demo_SwiftTests.swift in Sources */,
+				D768E2351F6B11B00012EFF9 /* CardinalConverterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,10 +383,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SOLID.Demo.SwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.a4tecnologia.SOLID-Demo-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOLID.Demo.Swift.app/SOLID.Demo.Swift";
 			};
@@ -380,6 +399,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SOLID.Demo.SwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.a4tecnologia.SOLID-Demo-SwiftTests";
